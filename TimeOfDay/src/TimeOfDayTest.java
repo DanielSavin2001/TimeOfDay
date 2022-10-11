@@ -13,6 +13,10 @@ public class TimeOfDayTest {
 		testClass.setMinutes(59);
 		assertEquals(5,testClass.getHours());
 		assertEquals(59,testClass.getMinutes());
+		
+		testClass.setMinutesSinceMidnight(13*60);
+		assertEquals(13,testClass.getHours());
+		assertEquals(0,testClass.getMinutes());
 	}
 
 }
